@@ -26,13 +26,27 @@
     <h1>Wikipedia Viewer</h1>
   </header>
   <section id="setup">
-    <input id="search" type="text">
-    <input id="get" type="submit" placeholder="Search">
+    <h3>Search Wikipedia Articles</h3>
+    <form id="searchForm" action="#" autocomplete="on">
+      <input id="search" type="text">
+      <input id="get" type="submit" value="Search">
+    </form>
+    <form id="randomWiki" action="https://en.wikipedia.org/wiki/Special:Random">
+      <input id="getRandom" type="submit" value="Random Wiki Article">
+    </form>
   </section>
   <section id="info">
-      <ul id="titlesHere"></ul>
+    <div id="tableDisplay">
+      <h2 id="articleHead">Article Title</h2>
+      <h2 id="descHead">Description</h2>
+      <h2 id="linkHead">Link to Article</h2>
+    </div>
+    <div id="allInfoHere">
+    </div>
+
+      <!-- <ul id="titlesHere"></ul>
       <ul id="descHere"></ul>
-      <ul id="text"></ul>
+      <ul id="text"></ul> -->
   </section>
 
   <script

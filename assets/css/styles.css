@@ -9,32 +9,57 @@ header {
   text-align: center;
 }
 
+#searchForm {
+  display: inline;
+}
+
+#randomWiki {
+  display: inline;
+}
+
 #info {
-  display: flex;
+  margin: 2% 0;
 }
 
-#titlesHere {
+#tableDisplay {
   display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 50%;
+  justify-content: space-between;
+}
+
+#tableDisplay > h2 {
   margin: 0 auto;
 }
 
-#descHere {
+#allInfoHere {
   display: flex;
   flex-direction: column;
-  text-align: left;
-  width: 50%;
+}
+
+[class^="list"] {
+  display: flex;
+  flex-direction: row;
+}
+
+[class^="title"] {
+  list-style: none;
+  text-align: center;
+  width: 10%;
+  margin: 0 auto;
+}
+
+[class^="desc"] {
+  list-style: none;
+  text-align: center;
+  width: 40%;
   margin: 0 auto;
 }
 
 
-#text {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: 50%;
+[class^="link"] {
+  /*display: flex;
+  flex-direction: column;*/
+  text-align: center;
+  width: 20%;
   margin: 0 auto;
 }
 

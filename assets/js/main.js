@@ -1,15 +1,31 @@
-var Getter = {
-  arr: []
-}
+
 
 function getter(res) {
-  $('.list').remove();
-  Getter.arr = [];
-  for (var i = 0; i < res.data[3].length; i++) {
-        Getter.arr.push(res.data[3][i]);
+  $('.title').remove();
+  $('.desc').remove();
+  $('.link').remove();
+  var Getter = {
+    titles: [],
+    desc: [],
+    links: []
+  }
+  for (var i = 0; i < res.data[1].length; i++) {
+        Getter.titles.push(res.data[1][i]);
     }
-  Getter.arr.forEach(function(el) {
-      $('#text').append('<li class="list">' + el + '</li>');
+  for (var i = 0; i < res.data[2].length; i++) {
+        Getter.desc.push(res.data[2][i]);
+    }
+  for (var i = 0; i < res.data[3].length; i++) {
+        Getter.links.push(res.data[3][i]);
+    }
+  Getter.titles.forEach(function(el) {
+      $('#titlesHere').append('<li class="title">' + el + '</li>');
+    })
+  Getter.desc.forEach(function(el) {
+      $('#descHere').append('<li class="desc">' + el + '</li>');
+    })
+  Getter.links.forEach(function(el) {
+      $('#text').append('<a class="link">' + el + '</a>');
     })
 }
 

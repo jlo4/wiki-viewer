@@ -5,12 +5,41 @@ header {
   text-align: center;
 }
 
-section {
+#setup {
   text-align: center;
+}
+
+#info {
+  display: flex;
+}
+
+#titlesHere {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#descHere {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
 }
 
 
 #text {
   display: flex;
   flex-direction: column;
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+.link {
+  list-style: none;
+  align-items: flex-start;
 }

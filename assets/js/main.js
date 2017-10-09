@@ -1,3 +1,6 @@
+// console.log(GetterObj.titles.length - 1);
+// $(`.list${GetterObj.titles.length}`).append(`<li class=title${GetterObj.titles.length}>` + GetterObj.titles[GetterObj.titles.length - 1] + '</li>');
+
 function getter(res) {
   $('#allInfoHere').empty();
   var GetterObj = {
@@ -18,6 +21,7 @@ function getter(res) {
       $('#allInfoHere').append(`<ul class=list${i}></ul>`);
       $(`.list${i}`).append(`<li class=title${i}>` + el + '</li>');
     })
+
   GetterObj.desc.forEach(function(el, i) {
       $(`.list${i}`).append(`<li class=desc${i}>` + el + '</li>');
     })

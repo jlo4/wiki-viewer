@@ -1,4 +1,6 @@
-# Wikipedia API search
+# Wikipedia API
+
+This project uses the www.wikipedia.org API to search for Wikipedia articles.
 
 This project is based on a project from [Free Code Camp](https://www.freecodecamp.org/)
 

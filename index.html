@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Wikipedia Viewer</title>
+</head>
+<body>
+  <nav class="fixed">
+		 <div class="hamburger clearfix">
+			 <p class="navicon">&#9776;</p>
+		 </div>
+		 <ul class="left">
+			 <li>John Love</li>
+			 <li><a href="http://github.com/jlo4">Github Profile</a></li>
+		 </ul>
+		 <ul class="dropdown clearfix right">
+			 <li><a href="#welcome">Start</a></li>
+  		 <li><a href="#portfolio">Portfolio</a></li>
+  		 <li><a href="#contact">Contact</a></li>
+ 		 </ul>
+	</nav>
+  <header>
+    <h1>Wikipedia Viewer</h1>
+  </header>
+  <section>
+    <input id="search" type="text">
+    <input id="get" type="submit" placeholder="Search">
+  </section>
+  <section>
+    <ul id="text"></ul>
+  </section>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

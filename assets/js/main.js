@@ -1,6 +1,3 @@
-// console.log(GetterObj.titles.length - 1);
-// $(`.list${GetterObj[titles.length]}`).append(`<li class=title${GetterObj[titles.length]}>` + GetterObj.titles[GetterObj.titles.length - 1] + '</li>');
-
 function getter(res) {
   $('#allInfoHere').empty();
   var GetterObj = {
@@ -32,8 +29,9 @@ function getter(res) {
 }
 
 $(document).ready(function() {
-  $('#get').on('click', function() {
-    var $in = $('#search').val();
+  $('#get').on('click', function(e) {
+    e.preventDefault();
+    var $in = $('#search').val().toLowerCase();
     var url = 'https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&search='+ $in + '&formatversion=latest';
     axios.get(url)
     .then(function(res){
@@ -45,7 +43,8 @@ $(document).ready(function() {
     $('#search').val('');
   })
   $('#search').on('keyup', function(e) {
-    var $in = $('#search').val();
+    e.preventDefault();
+    var $in = $('#search').val().toLowerCase();
     if ($in != '' && e.which == 13) {
       var url = 'https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&search='+ $in + '&formatversion=latest';
       axios.get(url)
